@@ -13,7 +13,7 @@ function th(str){
 		return window;
 	}
 	/* 
-IF the first character is "."
+	IF the first character is "."
 	then it gets the base from the window.
 	*/
 	if (str.charAt(0) == '.'){
@@ -21,8 +21,7 @@ IF the first character is "."
 		base = window[a[1]]; //the base is the window, now.
 		var idx = 1;
 		if (idx < a.length-1){
-			while ( (base[a[idx] ]) ){ //run through the array until
-										//the final index is found.
+			while ( (base[a[idx] ]) ){ //run through the array until the final index is found.
 				base = base[a[idx]]; 
 				idx++;
 			}
@@ -59,8 +58,7 @@ located.
 }
 
 th.add = function(name, value){ //adds any kind of value to the _THDAT
-	_THDAT[name] = value;		//adds it as a reference, so you don't
-								//need to worry about speed.
+	_THDAT[name] = value;		//adds it as a reference, so you don't	need to worry about speed.
 }
 
 
