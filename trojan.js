@@ -1,9 +1,9 @@
-function th(inp){
-	if (inp == "."){
+function th(str){
+	if (str == "."){
 		return window;
 	}
-	if (inp.charAt(0) == '.'){
-		var a = inp.split(".");
+	if (str.charAt(0) == '.'){
+		var a = str.split(".");
 		var base = window[a[1]];
 		var idx = 1;
 		if (idx < a.length -1){
