@@ -1,12 +1,12 @@
 #__Trojan.js__
 
-##_Now, you can break into the window and get stuff for free!_
+##_Now, you can break into the window and get stuff, for free!_
 
 **Okay**, I need `window.MODELS.trojanhorse.leg.0` using only a single string. How do I do it?
 
 `th(".MODELS.trojanhorse.leg.0")`
 
-Trojan was made simple so you can go in for the kill and do it like that.
+Trojan was made simple so you can go in for the kill, and then do it like that.
 
 ###**How it works:**
 
