@@ -1,5 +1,3 @@
-# Trojan
-
 #__Trojan.js__
 
 ##_Now, you can break into the window and get stuff for free!_
