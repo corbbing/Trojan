@@ -1,3 +1,4 @@
+
 var _THDAT = {};
 
 function th(str){
@@ -46,6 +47,24 @@ located.
 				idx++;
 			}
 		}
+	}
+	if (str.charAt(0) == '#'){
+		str = str.substr(1,str.length-1);
+		base = document.getElementById(str);
+		var a = str.split(".");
+		var idx = 1;
+		if (idx < a.length){
+			while ( (a[idx-1] in base) ){
+				base = base[a[idx]];
+				idx++;
+			}
+		}
+	}
+	if (str.charAt(0) == '*'){
+		str = str.substr(1,str.length-1);
+		var s = document.createElement("script");
+		s.setAttribute("src",str);
+		document.getElementsByTagName("head")[0].appendChild(s);
 	}
 	if (docall == false){
 		return base;
